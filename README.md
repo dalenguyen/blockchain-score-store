@@ -58,3 +58,32 @@ Test GetScore function
 ```
 ss.GetScore.call('Dale Nguyen');
 ```
+
+# Run this project in production 
+
+You need to have an Ethereum RPC Endpoint such as from Azure. Then update the truffile.js file for the production network info. After that, you compile again. 
+
+```
+truffle compile
+truffle migrate --network production
+```
+
+You can also test the project from console 
+
+```
+truffle console --network production
+```
+
+# Troubleshooting 
+
+If you cannot run the application in production. You may need to unlock the default account from your blockchain server by using ssh command. 
+
+```
+geth attach
+```
+
+```
+personal.unlockAccount(eth.coinbase) // reference to the default account
+```
+
+Keep the console open, while trying to migrate again from another terminal. 
