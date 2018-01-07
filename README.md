@@ -87,3 +87,5 @@ personal.unlockAccount(eth.coinbase) // reference to the default account
 ```
 
 Keep the console open, while trying to migrate again from another terminal. 
+
+*Source from [Pluralsight](https://www.pluralsight.com/courses/blockchain-fundamentals)*
